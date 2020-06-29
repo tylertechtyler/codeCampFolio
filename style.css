@@ -1,0 +1,30 @@
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#navbar {
+    position: fixed;
+}
+nav > ul {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav > ul > li {
+    padding:25px;
+    border: 0.5px solid black;
+}
+nav > ul > li:hover {
+    background-color: rgb(130, 159, 211);
+    cursor: pointer;
+}
+/* make this text fade in slowly when the page first opens either css animation or js
+.welcome-text {
+    animation: fadeAndScale .4s ease-in;
+}*/
