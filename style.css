@@ -8,13 +8,22 @@
 }
 #navbar {
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-color: blueviolet;
+    top: 0;
+    left: 0;   
+    width: 100%;
+
+    
 }
-nav > ul {
+#navbar > ul {
     width: 30vw;
     display: flex;
-    flex-direction: row;
+    list-style: none;
     justify-content: space-around;
-    list-style-type: none;
+    padding-right: 10px;
+    
 }
 nav > ul > li {
     padding:25px;
@@ -24,7 +33,83 @@ nav > ul > li:hover {
     background-color: rgb(130, 159, 211);
     cursor: pointer;
 }
-/* make this text fade in slowly when the page first opens either css animation or js
-.welcome-text {
-    animation: fadeAndScale .4s ease-in;
-}*/
+
+#about {
+    height: 10vh;
+    text-align: center;
+   /* background-color: darkblue;*/
+}
+#space-below {
+    height: 10vh;
+   /* background-color: darkblue;*/
+}
+
+#container-0 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}    
+
+#container1 {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 30vh);
+    grid-gap: 2px;
+    
+}
+.biopic {
+    background-image: url(profilepic.jpg);
+    background-size: 100% 100%;
+    grid-row-start: span 2;
+    padding: 10px;
+}
+.bio {
+    background-color: chocolate;
+    grid-column-start: span 2;
+   
+}
+.biolinks {
+    background-color: cadetblue;
+    grid-column-start: span 2;
+}
+#projects {
+    height: 10vh;
+    text-align: center;
+    /*background-color: darkgreen;*/
+}
+#container-p0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#container-p1 {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 30vh);
+    grid-gap: 2px;
+}
+.project-tile {
+    background-color: crimson;
+    grid-row-start: span 2;
+    padding: 10px;
+
+}
+.project-tile2 {
+    background-color: chocolate;
+    grid-row-start: span 2;
+}
+.project-tile3 {
+    background-color: cadetblue;
+    grid-row-start: span 2;
+
+}
+#space-belowp {
+    height: 10vh;
+    /*background-color: darkblue;*/
+    text-align: center;
+    margin-top: 50px;
+}
