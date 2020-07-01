@@ -3,6 +3,12 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 800px) {
+    body {
+        background-size: 100% 100%;
+    }
 }
 #welcome-section {
     height: 100vh;
@@ -23,6 +29,26 @@ body {
     height: 35px;
 
     
+}
+@media (max-width: 800px) {
+    #navbar {
+        justify-content: center;
+        background-color: rgb(2, 90, 38, 0.1);
+    }
+    #navbar > ul {
+        width: 30vw;
+        display: flex;
+        list-style: none;
+        justify-content: start;
+        padding-right: 10px;
+        margin-top: -10px;
+    }
+    nav > ul > li {
+        padding:25px;
+        border: 0.5px solid black;
+        background-color: rgb(6, 155, 68);
+    }
+
 }
 #navbar > ul {
     width: 30vw;
@@ -59,7 +85,37 @@ nav > ul > li:hover {
     justify-content: center;
     
 }    
-
+@media (max-width: 800px) {
+    
+    .biopic {
+        grid-column-start: span 2;
+        width: 140%;
+    }
+    .bio {
+        width: 122%;
+    }
+    .biolinks {
+        width: 122%;
+    }
+    #container-p0 {
+        height: 350px;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(4, 25vh);
+        grid-gap: 20px;
+    }
+    .project-tile {
+        height: min-content;
+    }
+    .project-tile2 {
+        height: min-content;
+    }
+    .project-tile3 {
+        height: min-content;
+    }
+}
 #container1 {
     
     display: grid;
@@ -96,7 +152,7 @@ nav > ul > li:hover {
 .icons {
     align-self: flex-end;
 }
-#projects {
+#container-p1 {
     height: 10vh;
     text-align: center;
     /*background-color: darkgreen;*/
@@ -107,26 +163,45 @@ nav > ul > li:hover {
     justify-content: center;
     
 }
-#container-p1 {
+
+#projects {
     display: grid;
     grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(2, 30vh);
-    grid-gap: 2px;
+    grid-template-rows: repeat(2, 25vh);
+    grid-gap: 10px;
 }
-.project-tile {
-    background-color: crimson;
-    grid-row-start: span 2;
-    padding: 10px;
 
+.project-tile {
+    background-color: rgba(86, 186, 211, 0.8);
+    grid-row-start: span 2;
+}
+
+.project-1-pic {
+    background-image: url(proj1.png);
+    background-size: 100% 100%;
+    height: 50%;
+}
+.project-info1 {
+    padding: 10px;    
 }
 .project-tile2 {
-    background-color: chocolate;
+    background-color: rgba(86, 186, 211, 0.8);
     grid-row-start: span 2;
 }
+.project-2-pic {
+    background-image: url(proj2.png);
+    background-size: 100% 100%;
+    height: 50%;
+}
 .project-tile3 {
-    background-color: cadetblue;
+    background-color: rgba(86, 186, 211, 0.8);
     grid-row-start: span 2;
 
+}
+.project-3-pic {
+    background-image: url(proj3.png);
+    background-size: 100% 100%;
+    height: 50%;
 }
 #space-belowp {
     height: 10vh;
